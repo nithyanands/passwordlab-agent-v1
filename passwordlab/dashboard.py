@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 import streamlit as st
-from .config import DB_PATH
+from passwordlab.config import DB_PATH
 
 st.set_page_config(page_title="PasswordLab Results", layout="wide")
 st.title("PasswordLab — Experiment Dashboard")

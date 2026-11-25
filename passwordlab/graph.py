@@ -86,6 +86,7 @@ def execute_simulation(state: LabState) -> LabState:
                 attempts += 1
                 if response.json().get("authenticated") is True:
                     successes += 1
+                    print(f"[CRACKED] username={username} password={candidate} at attempt {attempts}", flush=True)
             if attempts >= limit:
                 break
 
@@ -142,3 +143,4 @@ def build_graph():
     graph.add_edge("execute_simulation", "analyse_results")
     graph.add_edge("analyse_results", END)
     return graph.compile()
+

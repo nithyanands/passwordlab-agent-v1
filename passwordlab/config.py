@@ -10,10 +10,10 @@ HEALTH_URL = f"{LAB_BASE_URL}/health"
 ACCOUNTS_URL = f"{LAB_BASE_URL}/lab/accounts"
 LOGIN_URL = f"{LAB_BASE_URL}/login"
 
-HARD_MAX_ATTEMPTS = 200
+HARD_MAX_ATTEMPTS = 2000
 DEFAULT_MAX_ATTEMPTS = 100
 REQUEST_TIMEOUT_SECONDS = 2
-MAX_RUN_SECONDS = 20
+MAX_RUN_SECONDS = 120
 
 # Deliberately tiny search space for classroom demonstration.
 BRUTE_ALPHABET = "abc123"
